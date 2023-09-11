@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lampada | Apaga : Acende</title>
+    <style>
+        body{
+            background-color: #989898;
+        }
+        header, main{
+            display: flex;
+            flex-direction: column;/*para ficar um em baixo do outro*/
+            align-items:center;
+        }
+        button{
+            width:80px;
+            border-radius: 7px;
+            border:none;
+            background:#000;
+            color:#fff;
+            font-size: 1.2em;
+            padding:5px;
+            margin: 0 10px;
+        }
+        img{
+            border: double;
+            border-radius: 15px;
+            border-color: #ff0000;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Lâmpada JS Puro:</h1>
+    </header>
+    <main>
+      <div>
+        <img src="./img/lampada-desligada.png" alt="Lampada vai qui." id="lamp" />
+      </div>
+      <div>
+        <button id="turnOn">Liga</button>
+        <button id="turnOff">Desliga</button>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
